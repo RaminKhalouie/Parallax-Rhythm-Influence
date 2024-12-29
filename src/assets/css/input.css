@@ -1,3 +1,115 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@layer components{
+    .btn{
+        @apply flex gap-2 items-center text-white ;
+
+        >.icon{
+            @apply w-6 h-6 bg-[#BB70AD] rounded-full;
+
+            >*{
+                @apply w-full h-full object-scale-down;
+            }
+        }
+
+           >:first-child {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                position: relative;
+
+
+                > :last-child {
+                    color: white;
+                    position: absolute;
+                    left: -100%;
+                }
+            }
+
+
+            >:last-child {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                overflow: hidden;
+                position: relative;
+
+
+
+                > :last-child {
+                    color: white;
+                    position: absolute;
+                    top: 100%;
+
+                }
+            }
+
+            &:hover {
+                & :first-child {
+                    >* {
+                        transition: transform 0.5s;
+                        transform: translateX(100%);
+                    }
+                }
+
+                & :last-child {
+
+                    >* {
+                        transition: transform 0.5s;
+                        transform: translateY(-100%);
+                    }
+                }
+            }
+
+        }
+
+        .hover-y {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+
+            &:hover {
+
+                >* {
+                    transition: transform 0.5s;
+                    transform: translateY(-100%);
+                }
+            }
+
+            > :last-child {
+                color: white;
+                position: absolute;
+                top: 100%;
+
+            }
+        }
+
+        .hover-x {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+
+            &:hover {
+
+                >* {
+                    transition: transform 0.5s;
+                    transform: translateX(100%);
+                }
+            }
+
+            > :last-child {
+                color: white;
+                position: absolute;
+                left: -100%;
+            }
+        }
+}

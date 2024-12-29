@@ -4,13 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDo - Ramin Khalouie</title>
+    <title>Rhythm Influence - Ramin Khalouie</title>
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
-<body>
+<body class="bg-black">
+    <!-- Start Navbar -->
+    <nav class="w-full p-8  flex justify-between items-center sticky top-0 left-0 z-[999] text-lg capitalize">
+        <a href="#" title="Home">
+            <img src="assets/images/logo.svg" alt="">
+        </a>
+        <ul class="gap-8 *:text-zinc-400 hidden lg:flex">
+            <li><a href="#" class="hover-y">
+                    <span>Our Work</span>
+                    <span>Our Work</span>
+                </a></li>
+            <li><a href="#" class="hover-y">
+                    <span>Company</span>
+                    <span>Company</span>
+                </a></li>
+            <li><a href="#" class="hover-y">
+                    <span>Services</span>
+                    <span>Services</span>
+                </a></li>
+        </ul>
+        <a href="#" class="btn group hidden lg:flex">
+            <span class="icon">
+                <img src="assets/images/arrow.svg" alt="">
+                <img src="assets/images/arrow.svg" alt="">
+            </span>
+            <div>
+                <span>Get in touch</span>
+                <span>Get in touch</span>
+            </div>
+        </a>
+        <span class="flex lg:hidden text-white uppercase cursor-pointer p-8" id="toggle">menu</span>
+    </nav>
+    <!-- Mobile navigation -->
+    <div class="w-full h-screen z-[9999] bg-white fixed top-0 left-0 translate-x-full duration-500 p-8" id="nav-menu">
+        <div class="flex justify-between items-center">
+            <img src="assets/images/logo.svg" alt="" class="invert">
+            <span class="flex  text-black uppercase cursor-pointer p-8" id="toggle-close">Close</span>
+        </div>
+        <ul class="flex flex-col gap-4">
+            <li>
+                <a href="#" class="overflow-hidden flex"><span class="text-4xl flex w-full h-full translate-y-full">Our
+                        Work</span></a>
+            </li>
+            <li><a href="#" class="overflow-hidden flex"><span
+                        class="text-4xl flex w-full h-full translate-y-full">Company</span></a></li>
+            <li><a href="#" class="overflow-hidden flex"><span
+                        class="text-4xl flex w-full h-full translate-y-full">Services</span></a></li>
+            <li><a href="#" class="overflow-hidden flex"><span class="text-4xl flex w-full h-full translate-y-full">Get
+                        In Touch</span></a></li>
+            <li><a href="#" class="overflow-hidden flex"><span
+                        class="flex w-full h-full translate-y-full">Instagram</span></a></li>
+            <li><a href="#" class="overflow-hidden flex"><span
+                        class="flex w-full h-full translate-y-full">Linkedin</span></a></li>
+        </ul>
+    </div>
+    <!-- End Navbar -->
 
+    <!-- Start Header -->
+    <section class="w-full h-screen p-8">
+
+    </section>
+    <!-- End Header -->
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
+<!-- https://www.rhythminfluence.com/ -->
