@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rhythm Influence - Ramin Khalouie</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Meow+Script&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
-<body class="bg-black">
+<body class="bg-black h-[500vh]">
     <!-- Start Navbar -->
     <nav class="w-full p-8  flex justify-between items-center sticky top-0 left-0 z-[999] text-lg capitalize">
         <a href="#" title="Home">
@@ -66,11 +70,50 @@
     </div>
     <!-- End Navbar -->
 
-    <!-- Start Header -->
-    <section class="w-full h-screen p-8">
-
-    </section>
-    <!-- End Header -->
+    <!-- Start Main -->
+    <main class="w-full fixed top-12 lg:top-20 duration-75 transition-all left-0">
+        <!-- Start Top section -->
+        <section class="w-full h-screen p-8 flex flex-col items-center">
+            <div class="text-7xl font-bold lg:text-[10rem] lg:mt-16 text-white uppercase  relative">
+                <div
+                    class="absolute h-[300px] lg:h-full w-1/2 lg:w-[350px] top-1/2 left-1/2  rounded-md overflow-hidden  z-[-1] animate-slider4">
+                    <video src="assets/videos/video1.mp4" autoplay muted preload="auto" loop
+                        class="flex w-full h-full object-cover"></video>
+                </div>
+                <div
+                    class="absolute h-[300px] lg:h-full w-1/2 lg:w-[350px] top-1/2 left-1/2   rounded-md overflow-hidden  z-[-1] animate-slider3">
+                    <video src="assets/videos/video2.mp4" autoplay muted preload="auto" loop
+                        class="w-full h-full object-cover"></video>
+                </div>
+                <div
+                    class="absolute h-[300px] lg:h-full w-1/2 lg:w-[350px] top-1/2 left-1/2   rounded-md overflow-hidden  animate-slider2">
+                    <video src="assets/videos/video3.mp4" autoplay muted preload="auto" loop
+                        class="w-full h-full object-cover"></video>
+                </div>
+                <div
+                    class=" absolute h-[300px] lg:h-full w-1/2 lg:w-[350px] top-1/2 left-1/2   rounded-md overflow-hidden   z-[-1] animate-slider1">
+                    <video src="assets/videos/video4.mp4" autoplay muted preload="auto" loop
+                        class="w-full h-full object-cover"></video>
+                </div>
+                <div class="mb-[250px] lg:mb-0 flex justify-center p-8 relative z-20">
+                    <p class="mr-2 lg:mr-0">We</p>
+                    <p class="hidden lg:flex w-[300px] h-full "></p>
+                    <p>Are</p>
+                </div>
+                <div class="flex flex-col lg:flex-row justify-center p-8 relative z-20">
+                    <p class="flex justify-center items-baseline"><i class="font-workhorse mr-4">M</i>atch</p>
+                    <p class="hidden lg:flex w-[300px] h-full "></p>
+                    <p class="flex justify-center items-baseline">Makers</p>
+                </div>
+            </div>
+            <h2 class="text-white mt-24 text-3xl text-justify [text-align-last:center] w-2/3 lg:w-1/3">The #1 most
+                trusted partner
+                in influencer marketing, connecting the world’s leading brands with the best-suited top
+                talent.</h2>
+        </section>
+        <!-- End Top section -->
+    </main>
+    <!-- End Main -->
     <!-- JS -->
     <script src="assets/js/main.js"></script>
 </body>
