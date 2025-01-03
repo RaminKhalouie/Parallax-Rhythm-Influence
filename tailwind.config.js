@@ -49,6 +49,9 @@ module.exports = {
       },
       gridTemplateColumns: {
         'header': '1fr 400px 1fr'
+      },
+      backgroundImage: {
+        'footer': "url('../images/Full-Set-BTS-1.jfif')"
       }
     },
   },
