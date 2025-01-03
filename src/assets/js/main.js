@@ -12,6 +12,8 @@ const worksContainer = works.querySelector('&>div');
 const worksVideos = worksContainer.querySelectorAll('&>div');
 
 
+document.body.style.height = (main.clientHeight + nav.clientHeight + (worksVideos[0].clientWidth  + worksVideos[7].offsetLeft)) + "px";
+
 toggle.addEventListener('click', () => {
     nav.classList.remove('translate-x-full');
     lis.forEach((el) => {
